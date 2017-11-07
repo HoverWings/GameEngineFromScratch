@@ -1,0 +1,41 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: D:/ProgramTools/LLVM/bin/clang-cl.exe 
+Build flags: -Wall
+Id flags:  
+
+The output was:
+1104
+LINK : fatal error LNK1104: 无法打开文件“kernel32.lib”
+clang-cl.exe: error: linker command failed with exit code 1104 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: D:/ProgramTools/LLVM/bin/clang-cl.exe 
+Build flags: -Wall;-Xclang;-std=gnu++14
+Id flags:  
+
+The output was:
+1104
+LINK : fatal error LNK1104: 无法打开文件“kernel32.lib”
+clang-cl.exe: error: linker command failed with exit code 1104 (use -v to see invocation)
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/Projects/MyEngine/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/ProgramTools/MinGW/bin/mingw32-make.exe" "cmTC_37c7a/fast"
+D:/ProgramTools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_37c7a.dir\build.make CMakeFiles/cmTC_37c7a.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Projects/MyEngine/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_37c7a.dir/testCCompiler.c.obj
+D:\ProgramTools\LLVM\bin\clang-cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1   /FoCMakeFiles\cmTC_37c7a.dir\testCCompiler.c.obj /FdCMakeFiles\cmTC_37c7a.dir/ -c D:\Projects\MyEngine\build\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_37c7a.exe
+D:\ProgramTools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_37c7a.dir\link.txt --verbose=1
+D:\ProgramTools\CMake\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_37c7a.dir --manifests  -- D:\ProgramTools\VS2017\VC\Tools\MSVC\14.11.25503\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_37c7a.dir\objects1.rsp  /out:cmTC_37c7a.exe /implib:cmTC_37c7a.lib /pdb:D:\Projects\MyEngine\build\CMakeFiles\CMakeTmp\cmTC_37c7a.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+RC Pass 1: command "rc /foCMakeFiles\cmTC_37c7a.dir/manifest.res CMakeFiles\cmTC_37c7a.dir/manifest.rc" failed (exit code 0) with the following output:
+缁崵绮洪幍鍙ョ瑝閸掔増瀵氱�规氨娈戦弬鍥︽閵嗕景MakeFiles\cmTC_37c7a.dir\build.make:97: recipe for target 'cmTC_37c7a.exe' failed
+mingw32-make.exe[1]: *** [cmTC_37c7a.exe] Error -1
+mingw32-make.exe[1]: Leaving directory 'D:/Projects/MyEngine/build/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_37c7a/fast' failed
+mingw32-make.exe: *** [cmTC_37c7a/fast] Error 2
+
+
